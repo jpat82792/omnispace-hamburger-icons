@@ -20,6 +20,7 @@
 </h3>
 <h4>
   NOTE: These are future plans. Time permitting, I will do the things below. After the list below is done (well up to three items at least), if you would like to contribute feel free to make a pull request.
+  <br>
   <ol>
   <li>
               Make the naming of elements, css classes, and js variables+functions more systematic. Currently they are too verbose and not very descriptive of what is going on.
