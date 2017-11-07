@@ -1,134 +1,177 @@
 <!doctype html>
 <html>
   <head>
-      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<script
-  src="https://code.jquery.com/jquery-3.2.1.js"
-  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
-  crossorigin="anonymous"></script>
-<script
-  src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
-  integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
-  crossorigin="anonymous"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-      <link href="stylesheets/generic-hamburger-styles.css" rel="stylesheet">
-      <link href="stylesheets/hamburger.css" rel="stylesheet">
-
+    <link rel="icon" href="https://s3.amazonaws.com/omnispace/favicon/favicon.ico">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.js"
+      integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+      crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+      integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
+      crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link href="stylesheets/hamburger-styles.css" rel="stylesheet">
+    <link href="stylesheets/page-styles.css" rel="stylesheet">
   </head>
-  <body class="container-fluid">
-    <div class="row">
-      <div class="col-lg-3">
-        <button data-button-state="closed" data-click-state="active" id="navbar-collapse-mid-x-circle-button" type="button" class="animate-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+  <body class="container" >
+    <div class="row" >
+      <div class="col-xs-offset-1 col-xs-10">
+        <h2 class="header">Omnispace Hamburger Menu Animation Challenge</h2>
+        <h4 class="sections">This is what came of a design challenge to create a few sleek hamburger icon animations. </h4>
+        <h3 class="header">How to use</h3>
+        <h4 class="sections">
+          <ol>
+            <li class="list-element">
+              Download a zip of the <a href="https://github.com/jpat82792/omnispace-hamburger-icons">GitHub repository</a>
+            </li>
+            <li class="list-element">
+              Import hamburger-styles.css and hamburger-icon.js into the desired page
+            </li>
+            <li class="list-element">
+              Copy and paste html from index.html of the type of icon you want to use
+            </li>
+          </ol>
+        </h4>
+      </div>
+      <div class="col-xs-3 list-element">
+        <button data-button-state="closed" data-click-state="active" id="navbar-button-mid-collapse" type="button" class="animate-toggle collapsed" data-toggle="collapse" data-target="#navbar">
           <span class="sr-only">Toggle navigation</span>
-          <div class="default-icon-bar default-icon-bar-collapse-mid-x-circle icon-bar-1"></div>
-          <div class="default-icon-bar default-icon-bar-collapse-mid-x-circle icon-bar-2"></div>
-          <div class="default-icon-bar default-icon-bar-collapse-mid-x-circle icon-bar-3"></div>
+          <span class="default-icon-bar default-icon-bar-mid-collapse icon-bar-1"></span>
+          <span class="default-icon-bar default-icon-bar-mid-collapse icon-bar-2"></span>
+          <span class="default-icon-bar default-icon-bar-mid-collapse icon-bar-3"></span>
         </button>
       </div>
-      <div class="col-lg-3">
-        <button data-button-state="closed" data-click-state="active" id="navbar-button-collapse-mid-x" type="button" class="animate-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <div class="col-xs-3 list-element">
+        <button data-button-state="closed" data-click-state="active" id="navbar-button-top-collapse" type="button" class="animate-toggle collapsed" data-toggle="collapse" data-target="#navbar">
           <span class="sr-only">Toggle navigation</span>
-          <span class="default-icon-bar default-icon-bar-collapse-mid-x icon-bar-1"></span>
-          <span class="default-icon-bar default-icon-bar-collapse-mid-x icon-bar-2"></span>
-          <span class="default-icon-bar default-icon-bar-collapse-mid-x icon-bar-3"></span>
-        </button>
-      </div>
-      <div class="col-lg-3">
-        <button data-button-state="closed" data-click-state="active" id="navbar-button-collapse-up-x" type="button" class="animate-toggle collapsed" data-toggle="collapse" data-target="#navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar-1 default-icon-bar default-icon-bar-collapse-up-x "></span>
-          <span class="icon-bar-2 default-icon-bar default-icon-bar-collapse-up-x "></span>
-          <span class="icon-bar-3 default-icon-bar default-icon-bar-collapse-up-x "></span>
+          <span class="icon-bar-1 default-icon-bar default-icon-bar-top-collapse "></span>
+          <span class="icon-bar-2 default-icon-bar default-icon-bar-top-collapse "></span>
+          <span class="icon-bar-3 default-icon-bar default-icon-bar-top-collapse "></span>
         </button>
       </div>
 
-      <div class="col-lg-3">
-        <button data-button-state="closed" data-click-state="active" id="navbar-button-collapse-down-x" type="button" class="animate-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <div class="col-xs-3 list-element">
+        <button data-button-state="closed" data-click-state="active" id="navbar-button-bottom-collapse" type="button" class="animate-toggle collapsed" data-toggle="collapse" data-target="#navbar">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar-1 default-icon-bar default-icon-bar-collapse-down-x stack-collapse-icon-bar-1"></span>
           <span class="icon-bar-2 default-icon-bar default-icon-bar-collapse-down-x stack-collapse-icon-bar-2"></span>
           <span class="icon-bar-3 default-icon-bar default-icon-bar-collapse-down-x stack-collapse-icon-bar-3"></span>
         </button>
       </div>
-      <div class="col-lg-3">
-        <button data-button-state="closed" data-click-state="active" id="navbar-button-collapse-flip-right" type="button" class="animate-toggle collapsed flip-right-button" data-toggle="collapse" data-target="#navbar">
+      <div class="col-xs-3 list-element">
+        <button data-button-state="closed" data-click-state="active" id="navbar-button-top-collapse-flip-right" type="button" class="animate-toggle collapsed flip-right-button" data-toggle="collapse" data-target="#navbar">
           <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar default-icon-bar default-icon-bar-collapse-flip-right icon-bar-1"></span>
-          <span class="icon-bar default-icon-bar default-icon-bar-collapse-flip-right icon-bar-2"></span>
-          <span class="icon-bar default-icon-bar default-icon-bar-collapse-flip-right icon-bar-3"></span>
+          <span class="icon-bar default-icon-bar default-icon-bar-top-collapse-flip-right icon-bar-1"></span>
+          <span class="icon-bar default-icon-bar default-icon-bar-top-collapse-flip-right icon-bar-2"></span>
+          <span class="icon-bar default-icon-bar default-icon-bar-top-collapse-flip-right icon-bar-3"></span>
         </button>
       </div>
-      <div class="col-lg-3">
-        <button data-button-state="closed" data-click-state="active" id="navbar-button-collapse-flip-left" type="button" class="animate-toggle collapsed flip-left-button" data-toggle="collapse" data-target="#nbar">
+      <div class="col-xs-3 list-element">
+        <button data-button-state="closed" data-click-state="active" id="navbar-button-top-collapse-flip-left" type="button" class="animate-toggle collapsed flip-left-button" data-toggle="collapse" data-target="#nbar">
           <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar default-icon-bar default-icon-bar-collapse-flip-left icon-bar-1"></span>
-          <span class="icon-bar default-icon-bar default-icon-bar-collapse-flip-left icon-bar-2"></span>
-          <span class="icon-bar default-icon-bar default-icon-bar-collapse-flip-left icon-bar-3"></span>
+          <span class="icon-bar default-icon-bar default-icon-bar-top-collapse-flip-left icon-bar-1"></span>
+          <span class="icon-bar default-icon-bar default-icon-bar-top-collapse-flip-left icon-bar-2"></span>
+          <span class="icon-bar default-icon-bar default-icon-bar-top-collapse-flip-left icon-bar-3"></span>
         </button>
       </div>
-      <div class="col-lg-3">
-        <button data-button-state="closed" data-click-state="active" id="navbar-button-collapse-bottom-flip-left" type="button" class="animate-toggle collapsed flip-left-button" data-toggle="collapse" data-target="#nbar">
+      <div class="col-xs-3 list-element">
+        <button data-button-state="closed" data-click-state="active" id="navbar-button-bottom-collapse-flip-left" type="button" class="animate-toggle collapsed flip-left-button" data-toggle="collapse" data-target="#nbar">
           <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar default-icon-bar default-icon-bar-collapse-bottom-flip-left icon-bar-1"></span>
-          <span class="icon-bar default-icon-bar default-icon-bar-collapse-bottom-flip-left icon-bar-2"></span>
-          <span class="icon-bar default-icon-bar default-icon-bar-collapse-bottom-flip-left icon-bar-3"></span>
+          <span class="icon-bar default-icon-bar default-icon-bar-bottom-collapse-flip-left icon-bar-1"></span>
+          <span class="icon-bar default-icon-bar default-icon-bar-bottom-collapse-flip-left icon-bar-2"></span>
+          <span class="icon-bar default-icon-bar default-icon-bar-bottom-collapse-flip-left icon-bar-3"></span>
         </button>
       </div>
-      <div class="col-lg-3">
-        <button data-button-state="closed" data-click-state="active" id="navbar-button-collapse-bottom-flip-right" type="button" class="animate-toggle collapsed flip-left-button" data-toggle="collapse" data-target="#nbar">
+      <div class="col-xs-3 list-element">
+        <button data-button-state="closed" data-click-state="active" id="navbar-button-bottom-collapse-flip-right" type="button" class="animate-toggle collapsed flip-left-button" data-toggle="collapse" data-target="#nbar">
           <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar default-icon-bar default-icon-bar-collapse-bottom-flip-right icon-bar-1"></span>
-          <span class="icon-bar default-icon-bar default-icon-bar-collapse-bottom-flip-right icon-bar-2"></span>
-          <span class="icon-bar default-icon-bar default-icon-bar-collapse-bottom-flip-right icon-bar-3"></span>
+          <span class="icon-bar default-icon-bar default-icon-bar-bottom-collapse-flip-right icon-bar-1"></span>
+          <span class="icon-bar default-icon-bar default-icon-bar-bottom-collapse-flip-right icon-bar-2"></span>
+          <span class="icon-bar default-icon-bar default-icon-bar-bottom-collapse-flip-right icon-bar-3"></span>
         </button>
       </div>
-      <div class="col-lg-3">
-        <button data-button-state="closed" data-click-state="active" id="navbar-button-collapse-top-x-circle" type="button" class="animate-toggle collapsed flip-left-button" data-toggle="collapse" data-target="#nbar">
+      <div class="col-xs-3 list-element">
+        <button data-button-state="closed" data-click-state="active" id="navbar-mid-collapse-x-circle-button" type="button" class="animate-toggle collapsed" data-toggle="collapse" data-target="#navbar">
           <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar default-icon-bar default-icon-bar-collapse-top-x-circle icon-bar-1"></span>
-          <span class="icon-bar default-icon-bar default-icon-bar-collapse-top-x-circle icon-bar-2"></span>
-          <span class="icon-bar default-icon-bar default-icon-bar-collapse-top-x-circle icon-bar-3"></span>
+          <div class="default-icon-bar default-icon-bar-mid-collapse-x-circle icon-bar-1"></div>
+          <div class="default-icon-bar default-icon-bar-mid-collapse-x-circle icon-bar-2"></div>
+          <div class="default-icon-bar default-icon-bar-mid-collapse-x-circle icon-bar-3"></div>
         </button>
       </div>
-      <div class="col-lg-3">
-        <button data-button-state="closed" data-click-state="active" id="navbar-button-collapse-bottom-x-circle" type="button" class="animate-toggle collapsed flip-left-button" data-toggle="collapse" data-target="#nbar">
+      <div class="col-xs-3 list-element">
+        <button data-button-state="closed" data-click-state="active" id="navbar-button-top-collapse-x-circle" type="button" class="animate-toggle collapsed flip-left-button" data-toggle="collapse" data-target="#nbar">
           <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar default-icon-bar default-icon-bar-collapse-bottom-x-circle icon-bar-1"></span>
-          <span class="icon-bar default-icon-bar default-icon-bar-collapse-bottom-x-circle icon-bar-2"></span>
-          <span class="icon-bar default-icon-bar default-icon-bar-collapse-bottom-x-circle icon-bar-3"></span>
+          <span class="icon-bar default-icon-bar default-icon-bar-top-collapse-x-circle icon-bar-1"></span>
+          <span class="icon-bar default-icon-bar default-icon-bar-top-collapse-x-circle icon-bar-2"></span>
+          <span class="icon-bar default-icon-bar default-icon-bar-top-collapse-x-circle icon-bar-3"></span>
         </button>
       </div>
-      <div class="col-lg-3">
-        <button data-button-state="closed" data-click-state="active" id="navbar-button-collapse-top-flip-right-x-circle" type="button" class="animate-toggle collapsed flip-left-button" data-toggle="collapse" data-target="#nbar">
+      <div class="col-xs-3 list-element">
+        <button data-button-state="closed" data-click-state="active" id="navbar-button-bottom-collapse-x-circle" type="button" class="animate-toggle collapsed flip-left-button" data-toggle="collapse" data-target="#nbar">
           <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar default-icon-bar default-icon-bar-collapse-top-flip-right-x-circle icon-bar-1"></span>
-          <span class="icon-bar default-icon-bar default-icon-bar-collapse-top-flip-right-x-circle icon-bar-2"></span>
-          <span class="icon-bar default-icon-bar default-icon-bar-collapse-top-flip-right-x-circle icon-bar-3"></span>
+          <span class="icon-bar default-icon-bar default-icon-bar-bottom-collapse-x-circle icon-bar-1"></span>
+          <span class="icon-bar default-icon-bar default-icon-bar-bottom-collapse-x-circle icon-bar-2"></span>
+          <span class="icon-bar default-icon-bar default-icon-bar-bottom-collapse-x-circle icon-bar-3"></span>
         </button>
       </div>
-      <div class="col-lg-3">
-        <button data-button-state="closed" data-click-state="active" id="navbar-button-collapse-top-flip-left-x-circle" type="button" class="animate-toggle collapsed flip-left-button" data-toggle="collapse" data-target="#nbar">
+      <div class="col-xs-3 list-element">
+        <button data-button-state="closed" data-click-state="active" id="navbar-button-top-collapse-flip-right-x-circle" type="button" class="animate-toggle collapsed flip-left-button" data-toggle="collapse" data-target="#nbar">
           <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar default-icon-bar default-icon-bar-collapse-top-flip-left-x-circle icon-bar-1"></span>
-          <span class="icon-bar default-icon-bar default-icon-bar-collapse-top-flip-left-x-circle icon-bar-2"></span>
-          <span class="icon-bar default-icon-bar default-icon-bar-collapse-top-flip-left-x-circle icon-bar-3"></span>
+          <span class="icon-bar default-icon-bar default-icon-bar-top-collapse-flip-right-x-circle icon-bar-1"></span>
+          <span class="icon-bar default-icon-bar default-icon-bar-top-collapse-flip-right-x-circle icon-bar-2"></span>
+          <span class="icon-bar default-icon-bar default-icon-bar-top-collapse-flip-right-x-circle icon-bar-3"></span>
         </button>
       </div>
-      <div class="col-lg-3">
-        <button data-button-state="closed" data-click-state="active" id="navbar-button-collapse-bottom-flip-right-x-circle" type="button" class="animate-toggle collapsed flip-left-button" data-toggle="collapse" data-target="#nbar">
+      <div class="col-xs-3 list-element">
+        <button data-button-state="closed" data-click-state="active" id="navbar-button-top-collapse-flip-left-x-circle" type="button" class="animate-toggle collapsed flip-left-button" data-toggle="collapse" data-target="#nbar">
           <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar default-icon-bar default-icon-bar-collapse-bottom-flip-right-x-circle icon-bar-1"></span>
-          <span class="icon-bar default-icon-bar default-icon-bar-collapse-bottom-flip-right-x-circle icon-bar-2"></span>
-          <span class="icon-bar default-icon-bar default-icon-bar-collapse-bottom-flip-right-x-circle icon-bar-3"></span>
+          <span class="icon-bar default-icon-bar default-icon-bar-top-collapse-flip-left-x-circle icon-bar-1"></span>
+          <span class="icon-bar default-icon-bar default-icon-bar-top-collapse-flip-left-x-circle icon-bar-2"></span>
+          <span class="icon-bar default-icon-bar default-icon-bar-top-collapse-flip-left-x-circle icon-bar-3"></span>
         </button>
       </div>
-      <div class="col-lg-3">
-        <button data-button-state="closed" data-click-state="active" id="navbar-button-collapse-bottom-flip-left-x-circle" type="button" class="animate-toggle collapsed flip-left-button" data-toggle="collapse" data-target="#nbar">
+
+
+      <div class="col-xs-3 list-element">
+        <button data-button-state="closed" data-click-state="active" id="navbar-button-bottom-collapse-flip-right-x-circle" type="button" class="animate-toggle collapsed flip-left-button" data-toggle="collapse" data-target="#nbar">
           <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar default-icon-bar default-icon-bar-collapse-bottom-flip-left-x-circle icon-bar-1"></span>
-          <span class="icon-bar default-icon-bar default-icon-bar-collapse-bottom-flip-left-x-circle icon-bar-2"></span>
-          <span class="icon-bar default-icon-bar default-icon-bar-collapse-bottom-flip-left-x-circle icon-bar-3"></span>
+          <span class="icon-bar default-icon-bar default-icon-bar-bottom-collapse-flip-right-x-circle icon-bar-1"></span>
+          <span class="icon-bar default-icon-bar default-icon-bar-bottom-collapse-flip-right-x-circle icon-bar-2"></span>
+          <span class="icon-bar default-icon-bar default-icon-bar-bottom-collapse-flip-right-x-circle icon-bar-3"></span>
         </button>
+      </div>
+      <div class="col-xs-3 list-element">
+        <button data-button-state="closed" data-click-state="active" id="navbar-button-bottom-collapse-flip-left-x-circle" type="button" class="animate-toggle collapsed flip-left-button" data-toggle="collapse" data-target="#nbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar default-icon-bar default-icon-bar-bottom-collapse-flip-left-x-circle icon-bar-1"></span>
+          <span class="icon-bar default-icon-bar default-icon-bar-bottom-collapse-flip-left-x-circle icon-bar-2"></span>
+          <span class="icon-bar default-icon-bar default-icon-bar-bottom-collapse-flip-left-x-circle icon-bar-3"></span>
+        </button>
+      </div>
+      <div class="col-xs-offset-1 col-xs-10">
+        <h3 class="header">Future Plans</h3>
+        <h4>NOTE: These are future plans. Time permitting, I will do the things below. After the list below is done (well up to item three at least), if you would like to contribute feel free to make a pull request!</h4>
+        <h4 class="sections">
+          <ol>
+            <li class="list-element">
+              Make the naming of elements, css classes, and js variables+functions more systematic. Currently they are too verbose and not very descriptive of what is going on.
+            </li>
+            <li class="list-element">
+              A few of the icons, when clicked rapidly, will break. They still functional, but classes get misapplied.
+            </li>
+            <li class="list-element">
+              Comment the code.
+            </li>
+            <li class="list-element">
+              See if there is a good way to make these icons accessible to all users (screen readers etc).
+            </li>
+            <li class="list-element">
+              Add new icons as we do more design challenges.
+            </li>
+          </ol>
+        </h4>
       </div>
     </div>
       <script src="javascripts/hamburger-icon.js"></script>
